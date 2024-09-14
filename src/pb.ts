@@ -1,6 +1,6 @@
 import PocketBase from "pocketbase";
 import { TypedPocketBase } from "./types/pocketbase"
 
-const pb = new PocketBase('http://127.0.0.1:8090') as TypedPocketBase
+const pb = new PocketBase(import.meta.env.VITE_API_URL) as TypedPocketBase
 
 export default pb;
